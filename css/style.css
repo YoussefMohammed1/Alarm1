@@ -1,0 +1,188 @@
+.menu {
+    width: 30px;
+    display: flex;
+    background-color: #0075ff;
+    flex-wrap: wrap;
+    padding: 4px;
+    position: absolute;
+    top:10px;
+    right:10px;
+    cursor: pointer;
+}
+
+.menu span {
+    width: 100%;
+    height: 4px;
+    margin-bottom: 5px;
+    display: block;
+    background-color: white;
+}
+
+.menu span:last-of-type {
+    margin-bottom: 0;
+}
+
+.nav {
+    width: 100%;
+    height: 100%;
+    background-color: #b0b0b0;
+    position: fixed;
+    top:0;
+    left: 0;
+    list-style: none;
+    display: none;
+}
+
+.nav.active {
+    display: block;
+}
+
+.nav .close {
+    background-color: #0075ff;
+    width: 40px;
+    height: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    top:10px;
+    cursor: pointer;
+}
+
+.mode {
+    background-color: black;
+    color: white;
+    position: absolute;
+    width: 150px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+.nav li {
+    position: relative;
+    top:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.nav li span:first-child {
+    display: inline-block;
+    position: absolute;
+    left: 30px;
+    font-weight: bold;
+    width: 150px;
+    text-align: center;
+}
+
+.nav li span:nth-child(2) {
+    position: absolute;
+    left: 190px;
+}
+.nav li span input {
+    width: 160px;
+    border-radius: 10px;
+}
+
+.light {
+    display: none;
+}
+
+body.dark-mode {
+    background-color: #333;
+}
+
+body.dark-mode .mode {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode .hour-container span {
+    color: white;
+}
+
+body.dark-mode .minute-container span {
+    color: white;
+}
+
+body.light-mode {
+    background-color: white;
+}
+
+body.light-mode .mode {
+    background-color: black;
+    color: white;
+}
+
+.hour {
+    width: calc(100% - 100px);
+    padding: 10px;
+    border: 1px solid;
+    background-color: #0075ff;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.hour:focus {
+    outline: none;
+}
+
+.span-hour {
+    width: 60px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.minute {
+    width: calc(100% - 100px);
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: #0075ff;
+    color: white;
+    font-weight: bold;
+
+}
+
+.minute:focus {
+    outline: none;
+}
+
+
+.span-minute {
+    width: 60px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.hour-container {
+    margin-top: 60px;
+} 
+
+.minute-container {
+    margin-top: 30px;
+}
+
+button {
+    width: 100px;
+    padding: 5px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #0075ff;
+    border: none;
+    color: white;
+    opacity: 0;
+}
+
